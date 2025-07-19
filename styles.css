@@ -1,0 +1,80 @@
+body{
+    background: #b52b2b;
+background: linear-gradient(90deg, rgba(181, 43, 43, 1) 0%, rgba(201, 163, 163, 1) 0%, rgba(186, 39, 39, 1) 35%, rgba(181, 109, 109, 1) 61%);
+color: black;
+}
+form{
+    width: 500px;
+}
+fieldset{
+    border: 3px solid black;
+    border-radius: 10px;
+}
+legend{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+}
+input[required]{
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+}
+input[optional]{
+    border: 2px solid rgb(127, 129, 255);
+    border-radius: 5px;
+}
+input:focus{
+    background-color: rgb(164, 34, 86);
+}
+input + p{
+    display: none;
+}
+input:hover + p{
+    display: inline;
+    background-color: wheat;
+    font-size: 14px;
+    font-weight: 200;
+}
+input[type="radio"]:checked{
+    height: 15px;
+    width: 15px;
+}
+input[type="radio"]:checked + label{
+    font-size: 20px;
+}
+select{
+    background-color: aquamarine;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+textarea{
+    resize: none;
+}
+input[type="email"]~ img{
+    display: none;
+}
+input[type="email"]:focus:valid ~ img#correct {
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+input[type="email"]:focus:invalid ~ img#incorrect {
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+input[type="number"] ~ img{
+    display: none;
+}
+input[type="number"]:focus:valid ~ img#correct {
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+input[type="number"]:focus:invalid ~ img#wrong {
+    display: inline;
+    height: 20px;
+    width: 20px;
+}
+input[type="file"]{
+    border-radius: 10px;
+    border: 2px solid rgb(35, 52, 9);
+}

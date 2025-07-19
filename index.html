@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Course Registration Form</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+        <table>
+            <tr>
+                <td><label for="firstname">First Name</label></td>
+                <td><input type="text" placeholder="First Name" required>
+                <p>Enter your name</p></td>  
+            </tr>
+                <tr> 
+                <td><label for="lastname">Lastname</label></td>
+                <td><input type="text" placeholder="Lastname" optional>
+                <p>Enter your lastname</p></td>
+                </tr>
+                <tr>
+                    <td><label for="Mobile">Mobile Number</label></td>
+                    <td><input type="tel" placeholder="9900801340" required>
+                    <p>Enter your mobile number</p></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email"  placeholder="bhoomika@gmail.com" required>    
+                    <img src="./checkmark.png" alt="" id="correct">
+                    <img src="./incorrect.png" alt="" id="incorrect">
+                    </td>
+                    
+                </tr>
+                <tr><td><label for="Password">Password</label></td>
+                <td><input type="password" placeholder="password" required> 
+                    <p>Enter your password</p> 
+                </td></tr>
+                <tr><td><label for="confirm password">Confirm Password</label></td>
+                <td><input type="password" placeholder="confirm password" required></td></tr>
+                <tr><td><label for="dob">DOB</label></td>
+                <td><input type="date" required>
+                    <tr>
+                        <td><label>AGE</label></td>
+                        <td><input type="number" name="age" required min="18" max="100"/>
+                        <img src="./checkmark.png" alt="" id="correct">
+                        <img src="./incorrect.png" alt="" id="wrong">
+                        </td>
+                    </tr>
+                <p>Enter your dob</p></td></tr>
+                <tr><td><label for="gender">Gender</label></td>
+                <td><input type="radio" value="M" name="gender"><label>Male</label>
+                <input type="radio" value="F" name="gender"><label>Female</label>
+                <input type="radio" value="O" name="gender">Others</td></tr>
+                <tr>
+                    <td>Select Country</td>
+                    <td>
+                    <select name="Country">
+                        <option value="INDIA">INDIA</option>
+                        <option value="USA">USA</option>
+                        <option value="China">China</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr><td><label for="file">Upload File</label></td>
+                <td><input type="file"></td></tr>   
+                <td><input type="Reset" value="Reset" name="Reset"></td>
+            </table>
+            </fieldset>
+            <fieldset>
+                <legend>Course Details</legend>
+                <form action="">
+                    <label for="">Select course</label>
+                    <select name="coure" id="course">
+                        <option value="Python Full Stack">Python Full Stack</option>
+                        <option value="Java Full Stack">Java Full Stack</option>
+                    <option value="Core Java">Core Java</option>
+                    <option value="Python for DataScience">Python for DataScience</option>
+                    </select><br><br>
+                    <label for="mode">Delivery Mode</label>
+                    <input type="radio" id="mode" name="mode" value="Online">
+                    <label>Online</label>
+                    <input type="radio" id="mode" name="mode" value="Offline"><label>Offline</label> <br><br>
+                    <label for="">Institute Name:</label>
+                    <input type="text" name="institute name" value="TAP ACADEMY" readonly><br><br>
+                    <label for="">Comments</label><br>
+                    <textarea name="Comments" id="Comments" cols="40" rows="4"></textarea>
+                </form>
+            </fieldset><br>
+            <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>
